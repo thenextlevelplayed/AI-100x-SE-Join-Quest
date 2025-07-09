@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChineseChess.Core", "ChineseChess.Core\ChineseChess.Core.csproj", "{CBCAE11F-F713-4B37-9B5B-11F4E3E6ADCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChineseChess.Tests", "ChineseChess.Tests\ChineseChess.Tests.csproj", "{0F41F1C2-E495-4484-B118-8965CCA6CEEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBCAE11F-F713-4B37-9B5B-11F4E3E6ADCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBCAE11F-F713-4B37-9B5B-11F4E3E6ADCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBCAE11F-F713-4B37-9B5B-11F4E3E6ADCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBCAE11F-F713-4B37-9B5B-11F4E3E6ADCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F41F1C2-E495-4484-B118-8965CCA6CEEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F41F1C2-E495-4484-B118-8965CCA6CEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F41F1C2-E495-4484-B118-8965CCA6CEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F41F1C2-E495-4484-B118-8965CCA6CEEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

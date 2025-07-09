@@ -1,0 +1,11 @@
+/Users/apple/cursor test/Chinese Chess/ChineseChess.Core/bin/Debug/net8.0/ChineseChess.Core.deps.json
+/Users/apple/cursor test/Chinese Chess/ChineseChess.Core/bin/Debug/net8.0/ChineseChess.Core.dll
+/Users/apple/cursor test/Chinese Chess/ChineseChess.Core/bin/Debug/net8.0/ChineseChess.Core.pdb
+/Users/apple/cursor test/Chinese Chess/ChineseChess.Core/obj/Debug/net8.0/ChineseChess.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/apple/cursor test/Chinese Chess/ChineseChess.Core/obj/Debug/net8.0/ChineseChess.Core.AssemblyInfoInputs.cache
+/Users/apple/cursor test/Chinese Chess/ChineseChess.Core/obj/Debug/net8.0/ChineseChess.Core.AssemblyInfo.cs
+/Users/apple/cursor test/Chinese Chess/ChineseChess.Core/obj/Debug/net8.0/ChineseChess.Core.csproj.CoreCompileInputs.cache
+/Users/apple/cursor test/Chinese Chess/ChineseChess.Core/obj/Debug/net8.0/ChineseChess.Core.dll
+/Users/apple/cursor test/Chinese Chess/ChineseChess.Core/obj/Debug/net8.0/refint/ChineseChess.Core.dll
+/Users/apple/cursor test/Chinese Chess/ChineseChess.Core/obj/Debug/net8.0/ChineseChess.Core.pdb
+/Users/apple/cursor test/Chinese Chess/ChineseChess.Core/obj/Debug/net8.0/ref/ChineseChess.Core.dll

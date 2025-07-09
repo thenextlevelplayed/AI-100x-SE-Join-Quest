@@ -1,0 +1,641 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="b78c5cde-3f53-4b44-93a1-219d1ac40d9c" name="@AppledeMacBook-Pro 2025-07-09 22:31:25" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-07-09T22:31:25.4189440+08:00" queuing="2025-07-09T22:31:25.4189440+08:00" start="2025-07-09T22:31:24.8222760+08:00" finish="2025-07-09T22:31:26.1811160+08:00" />
+  <TestSettings name="default" id="c199087e-859b-4c65-a3e1-48cfde1f68c3">
+    <Deployment runDeploymentRoot="_AppledeMacBook-Pro_2025-07-09_22_31_25" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="586380e6-6b9d-49f4-9d22-38294cb66059" testId="2d746cd7-d79a-4d3d-e396-cf5df9ff2dd9" testName="RedMovesTheGeneralOutsideThePalaceIllegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0003540" startTime="2025-07-09T22:31:25.3441390+08:00" endTime="2025-07-09T22:31:25.3444930+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="586380e6-6b9d-49f4-9d22-38294cb66059">
+      <Output>
+        <StdOut>Given the board is empty except for a Red General at (1, 6)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "General", 1, 6) (0.0s)
+When Red moves the General from (1, 6) to (1, 7)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "General", 1, 6, 1, 7) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="39bd08aa-7ad1-4950-ae9a-4c02681df49e" testId="d94eef9f-77cc-775d-1e02-fe06c0fc5ef8" testName="RedMovesTheSoldierSidewaysAfterCrossingTheRiverLegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0001950" startTime="2025-07-09T22:31:25.3473960+08:00" endTime="2025-07-09T22:31:25.3475900+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="39bd08aa-7ad1-4950-ae9a-4c02681df49e">
+      <Output>
+        <StdOut>Given the board is empty except for a Red Soldier at (6, 5)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Soldier", 6, 5) (0.0s)
+When Red moves the Soldier from (6, 5) to (6, 4)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Soldier", 6, 5, 6, 4) (0.0s)
+Then the move is legal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("legal") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a6bb8ad2-93f7-479b-b5a4-a205edce94a0" testId="c28fc0ea-a785-ef81-89cf-5b736fdd2546" testName="RedCapturesANon_GeneralPieceAndTheGameContinuesLegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0022340" startTime="2025-07-09T22:31:25.3376020+08:00" endTime="2025-07-09T22:31:25.3398350+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6bb8ad2-93f7-479b-b5a4-a205edce94a0">
+      <Output>
+        <StdOut>Given the board has:
+  --- table step argument ---
+  | Piece        | Position |
+  | Red Rook     | (5, 5)   |
+  | Black Cannon | (5, 8)   |
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardHas(&lt;table&gt;) (0.0s)
+When Red moves the Rook from (5, 5) to (5, 8)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Rook", 5, 5, 5, 8) (0.0s)
+Then the game is not over just from that capture
+-&gt; done: ChineseChessStepDefinitions.ThenTheGameIsNotOver() (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b75b4784-2d30-4be5-b5c9-c3de6c1b957d" testId="fba60cca-3a1e-53cf-7fef-0b2737eccadf" testName="RedMovesTheCannonAndJumpsExactlyOneScreenToCaptureLegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0007790" startTime="2025-07-09T22:31:25.3407890+08:00" endTime="2025-07-09T22:31:25.3415670+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b75b4784-2d30-4be5-b5c9-c3de6c1b957d">
+      <Output>
+        <StdOut>Given the board has:
+  --- table step argument ---
+  | Piece         | Position |
+  | Red Cannon    | (6, 2)   |
+  | Black Soldier | (6, 5)   |
+  | Black Guard   | (6, 8)   |
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardHas(&lt;table&gt;) (0.0s)
+When Red moves the Cannon from (6, 2) to (6, 8)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Cannon", 6, 2, 6, 8) (0.0s)
+Then the move is legal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("legal") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c6a8793c-6af2-404b-a4f3-7d33eb271511" testId="c0963126-35f8-a365-c466-cfc5f50d0c76" testName="RedMovesTheGuardStraightIllegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0002330" startTime="2025-07-09T22:31:25.3451740+08:00" endTime="2025-07-09T22:31:25.3454070+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c6a8793c-6af2-404b-a4f3-7d33eb271511">
+      <Output>
+        <StdOut>Given the board is empty except for a Red Guard at (2, 5)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Guard", 2, 5) (0.0s)
+When Red moves the Guard from (2, 5) to (2, 6)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Guard", 2, 5, 2, 6) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2bdf5993-7a15-4ae1-a7e4-54216d3c74d3" testId="fc6fd1b0-7469-e3c7-9409-7918339ca20a" testName="RedMovesTheElephantAndTriesToCrossTheRiverIllegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0003260" startTime="2025-07-09T22:31:25.3438050+08:00" endTime="2025-07-09T22:31:25.3441320+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2bdf5993-7a15-4ae1-a7e4-54216d3c74d3">
+      <Output>
+        <StdOut>Given the board is empty except for a Red Elephant at (5, 3)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Elephant", 5, 3) (0.0s)
+When Red moves the Elephant from (5, 3) to (7, 5)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Elephant", 5, 3, 7, 5) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5a20fbfc-87ae-4b59-a246-0a63e9324a0b" testId="dd9e1381-ad5a-4d6a-b60f-009586387a3a" testName="RedMovesTheCannonAndTriesToJumpWithZeroScreensIllegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0002730" startTime="2025-07-09T22:31:25.3419280+08:00" endTime="2025-07-09T22:31:25.3422020+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a20fbfc-87ae-4b59-a246-0a63e9324a0b">
+      <Output>
+        <StdOut>Given the board has:
+  --- table step argument ---
+  | Piece       | Position |
+  | Red Cannon  | (6, 2)   |
+  | Black Guard | (6, 8)   |
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardHas(&lt;table&gt;) (0.0s)
+When Red moves the Cannon from (6, 2) to (6, 8)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Cannon", 6, 2, 6, 8) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0050b933-2f19-4ead-8b4a-81b66e7d19f4" testId="c3623792-76c2-2351-9578-ddb62b370b7b" testName="RedMovesTheRookAndAttemptsToJumpOverAPieceIllegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0002470" startTime="2025-07-09T22:31:25.3463350+08:00" endTime="2025-07-09T22:31:25.3465810+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0050b933-2f19-4ead-8b4a-81b66e7d19f4">
+      <Output>
+        <StdOut>Given the board has:
+  --- table step argument ---
+  | Piece         | Position |
+  | Red Rook      | (4, 1)   |
+  | Black Soldier | (4, 5)   |
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardHas(&lt;table&gt;) (0.0s)
+When Red moves the Rook from (4, 1) to (4, 9)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Rook", 4, 1, 4, 9) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e2fab5dd-d37c-4474-b583-b005a54cbf22" testId="a2fab6db-855e-4bf0-06f4-4af3c1b04a01" testName="RedMovesTheHorseAndItIsBlockedByAnAdjacentPieceIllegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0004800" startTime="2025-07-09T22:31:25.3454140+08:00" endTime="2025-07-09T22:31:25.3458940+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e2fab5dd-d37c-4474-b583-b005a54cbf22">
+      <Output>
+        <StdOut>Given the board has:
+  --- table step argument ---
+  | Piece      | Position |
+  | Red Horse  | (3, 3)   |
+  | Black Rook | (4, 3)   |
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardHas(&lt;table&gt;) (0.0s)
+When Red moves the Horse from (3, 3) to (5, 4)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Horse", 3, 3, 5, 4) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e152d29a-c8e6-4644-a354-3dcc00700c94" testId="4ad8fe01-94d2-6deb-1dfd-02514272df48" testName="RedMovesTheSoldierAndTriesToMoveSidewaysBeforeCrossingIllegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0002080" startTime="2025-07-09T22:31:25.3469760+08:00" endTime="2025-07-09T22:31:25.3471850+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e152d29a-c8e6-4644-a354-3dcc00700c94">
+      <Output>
+        <StdOut>Given the board is empty except for a Red Soldier at (3, 5)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Soldier", 3, 5) (0.0s)
+When Red moves the Soldier from (3, 5) to (3, 4)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Soldier", 3, 5, 3, 4) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6c1a8a13-dcfb-4e52-af3f-29fe671f52a4" testId="eefa19ad-809d-9f92-a76b-8a3b7e92d9b4" testName="RedMovesTheSoldierAndAttemptsToMoveBackwardAfterCrossingIllegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0003869" startTime="2025-07-09T22:31:25.3465850+08:00" endTime="2025-07-09T22:31:25.3469720+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6c1a8a13-dcfb-4e52-af3f-29fe671f52a4">
+      <Output>
+        <StdOut>Given the board is empty except for a Red Soldier at (6, 5)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Soldier", 6, 5) (0.0s)
+When Red moves the Soldier from (6, 5) to (5, 5)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Soldier", 6, 5, 5, 5) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f0096cc7-9a12-47a5-96bd-81f6a09ba2ba" testId="131cf4cd-c6df-294f-1ae9-d0eb7e90ea58" testName="RedMovesTheGuardDiagonallyInThePalaceLegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0004060" startTime="2025-07-09T22:31:25.3447610+08:00" endTime="2025-07-09T22:31:25.3451670+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f0096cc7-9a12-47a5-96bd-81f6a09ba2ba">
+      <Output>
+        <StdOut>Given the board is empty except for a Red Guard at (1, 4)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Guard", 1, 4) (0.0s)
+When Red moves the Guard from (1, 4) to (2, 5)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Guard", 1, 4, 2, 5) (0.0s)
+Then the move is legal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("legal") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="82125642-8c22-4d1c-ab2c-5dff2241cd0d" testId="b6a9b573-eb6d-448d-a8d0-21df837e462f" testName="RedMovesTheRookAlongAClearRankLegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0002040" startTime="2025-07-09T22:31:25.3461200+08:00" endTime="2025-07-09T22:31:25.3463240+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="82125642-8c22-4d1c-ab2c-5dff2241cd0d">
+      <Output>
+        <StdOut>Given the board is empty except for a Red Rook at (4, 1)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Rook", 4, 1) (0.0s)
+When Red moves the Rook from (4, 1) to (4, 9)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Rook", 4, 1, 4, 9) (0.0s)
+Then the move is legal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("legal") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4bdca1f3-0601-4a5c-a8e8-d2567b94a9e3" testId="0c96c06f-20ef-ff84-36d2-a0cb084745ea" testName="RedMovesTheElephant2_StepDiagonalWithAClearMidpointLegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0005260" startTime="2025-07-09T22:31:25.3427650+08:00" endTime="2025-07-09T22:31:25.3432910+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4bdca1f3-0601-4a5c-a8e8-d2567b94a9e3">
+      <Output>
+        <StdOut>Given the board is empty except for a Red Elephant at (3, 3)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Elephant", 3, 3) (0.0s)
+When Red moves the Elephant from (3, 3) to (5, 5)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Elephant", 3, 3, 5, 5) (0.0s)
+Then the move is legal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("legal") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3ad037ea-9745-4800-b35d-5a77499afd0a" testId="cf36bdc8-8c16-5de9-8864-1bcd8ba8f252" testName="RedCapturesOpponentsGeneralAndWinsImmediatelyLegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0009190" startTime="2025-07-09T22:31:25.3398590+08:00" endTime="2025-07-09T22:31:25.3407770+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3ad037ea-9745-4800-b35d-5a77499afd0a">
+      <Output>
+        <StdOut>Given the board has:
+  --- table step argument ---
+  | Piece         | Position |
+  | Red Rook      | (5, 5)   |
+  | Black General | (5, 8)   |
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardHas(&lt;table&gt;) (0.0s)
+When Red moves the Rook from (5, 5) to (5, 8)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Rook", 5, 5, 5, 8) (0.0s)
+Then Red wins immediately
+-&gt; done: ChineseChessStepDefinitions.ThenPlayerWinsImmediately("Red") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fc52fdbd-6e64-4d09-8e2b-fea5b9a7ce1d" testId="bfd364e0-c5fe-2ffa-b020-368b73a5dac9" testName="GeneralsFaceEachOtherOnTheSameFileIllegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0323130" startTime="2025-07-09T22:31:25.3042540+08:00" endTime="2025-07-09T22:31:25.3365200+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fc52fdbd-6e64-4d09-8e2b-fea5b9a7ce1d">
+      <Output>
+        <StdOut>Given the board has:
+  --- table step argument ---
+  | Piece         | Position |
+  | Red General   | (2, 4)   |
+  | Black General | (8, 5)   |
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardHas(&lt;table&gt;) (0.0s)
+When Red moves the General from (2, 4) to (2, 5)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "General", 2, 4, 2, 5) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b93ce67d-3d8b-4291-8712-75534e575b9f" testId="687d12f0-b253-ad0c-d04b-3e08c391c61a" testName="RedMovesTheSoldierForwardBeforeCrossingTheRiverLegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0002030" startTime="2025-07-09T22:31:25.3471880+08:00" endTime="2025-07-09T22:31:25.3473910+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b93ce67d-3d8b-4291-8712-75534e575b9f">
+      <Output>
+        <StdOut>Given the board is empty except for a Red Soldier at (3, 5)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Soldier", 3, 5) (0.0s)
+When Red moves the Soldier from (3, 5) to (4, 5)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Soldier", 3, 5, 4, 5) (0.0s)
+Then the move is legal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("legal") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e162ad8e-2665-4d3a-971f-2ef2c3551318" testId="ac9626ea-cef3-a95c-69bd-35c8338fb86a" testName="RedMovesTheCannonAndTriesToJumpWithMoreThanOneScreenIllegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0003470" startTime="2025-07-09T22:31:25.3415760+08:00" endTime="2025-07-09T22:31:25.3419230+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e162ad8e-2665-4d3a-971f-2ef2c3551318">
+      <Output>
+        <StdOut>Given the board has:
+  --- table step argument ---
+  | Piece         | Position |
+  | Red Cannon    | (6, 2)   |
+  | Red Soldier   | (6, 4)   |
+  | Black Soldier | (6, 5)   |
+  | Black Guard   | (6, 8)   |
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardHas(&lt;table&gt;) (0.0s)
+When Red moves the Cannon from (6, 2) to (6, 8)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Cannon", 6, 2, 6, 8) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d4747075-90c7-49e4-8fcf-f3e00c393c16" testId="27ac7941-aef2-01ee-6dbf-6fb3871d90a4" testName="RedMovesTheCannonLikeARookWithAnEmptyPathLegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0005540" startTime="2025-07-09T22:31:25.3422060+08:00" endTime="2025-07-09T22:31:25.3427600+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d4747075-90c7-49e4-8fcf-f3e00c393c16">
+      <Output>
+        <StdOut>Given the board is empty except for a Red Cannon at (6, 2)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Cannon", 6, 2) (0.0s)
+When Red moves the Cannon from (6, 2) to (6, 8)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Cannon", 6, 2, 6, 8) (0.0s)
+Then the move is legal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("legal") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f2cee1ac-447d-4580-a733-a6e4763037f3" testId="09a80872-f0e0-b917-f375-27fb8ca588f9" testName="RedMovesTheHorseInAnLShapeWithNoBlockLegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0002180" startTime="2025-07-09T22:31:25.3458980+08:00" endTime="2025-07-09T22:31:25.3461160+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f2cee1ac-447d-4580-a733-a6e4763037f3">
+      <Output>
+        <StdOut>Given the board is empty except for a Red Horse at (3, 3)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Horse", 3, 3) (0.0s)
+When Red moves the Horse from (3, 3) to (5, 4)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Horse", 3, 3, 5, 4) (0.0s)
+Then the move is legal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("legal") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d97d1f3d-48dd-4044-9313-90e6b2b980b1" testId="f0b369aa-fd16-9cb3-5d3e-c45eb99923c9" testName="RedMovesTheGeneralWithinThePalaceLegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0002520" startTime="2025-07-09T22:31:25.3445020+08:00" endTime="2025-07-09T22:31:25.3447530+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d97d1f3d-48dd-4044-9313-90e6b2b980b1">
+      <Output>
+        <StdOut>Given the board is empty except for a Red General at (1, 5)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "General", 1, 5) (0.0s)
+When Red moves the General from (1, 5) to (1, 4)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "General", 1, 5, 1, 4) (0.0s)
+Then the move is legal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("legal") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5adb1e88-00d5-49fd-b9d5-ba2329932e8e" testId="0474e0bf-16a3-b841-11b4-d71d88908172" testName="RedMovesTheElephantAndItsMidpointIsBlockedIllegal" computerName="AppledeMacBook-Pro" duration="00:00:00.0004929" startTime="2025-07-09T22:31:25.3433010+08:00" endTime="2025-07-09T22:31:25.3437930+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5adb1e88-00d5-49fd-b9d5-ba2329932e8e">
+      <Output>
+        <StdOut>Given the board has:
+  --- table step argument ---
+  | Piece        | Position |
+  | Red Elephant | (3, 3)   |
+  | Black Rook   | (4, 4)   |
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardHas(&lt;table&gt;) (0.0s)
+When Red moves the Elephant from (3, 3) to (5, 5)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Elephant", 3, 3, 5, 5) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1be202ad-d7cf-49a4-8e72-763381d963dc" testId="fcb426e9-c7d2-712e-ffef-5e65c178effe" testName="Test1" computerName="AppledeMacBook-Pro" duration="00:00:00.0170000" startTime="2025-07-09T22:31:25.3492750+08:00" endTime="2025-07-09T22:31:25.3662750+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1be202ad-d7cf-49a4-8e72-763381d963dc" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="RedMovesTheElephantAndTriesToCrossTheRiverIllegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="fc6fd1b0-7469-e3c7-9409-7918339ca20a">
+      <Execution id="2bdf5993-7a15-4ae1-a7e4-54216d3c74d3" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="RedMovesTheElephantAndTriesToCrossTheRiverIllegal" />
+    </UnitTest>
+    <UnitTest name="RedCapturesOpponentsGeneralAndWinsImmediatelyLegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="cf36bdc8-8c16-5de9-8864-1bcd8ba8f252">
+      <Execution id="3ad037ea-9745-4800-b35d-5a77499afd0a" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="RedCapturesOpponentsGeneralAndWinsImmediatelyLegal" />
+    </UnitTest>
+    <UnitTest name="RedMovesTheCannonLikeARookWithAnEmptyPathLegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="27ac7941-aef2-01ee-6dbf-6fb3871d90a4">
+      <Execution id="d4747075-90c7-49e4-8fcf-f3e00c393c16" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="RedMovesTheCannonLikeARookWithAnEmptyPathLegal" />
+    </UnitTest>
+    <UnitTest name="RedMovesTheRookAndAttemptsToJumpOverAPieceIllegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="c3623792-76c2-2351-9578-ddb62b370b7b">
+      <Execution id="0050b933-2f19-4ead-8b4a-81b66e7d19f4" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="RedMovesTheRookAndAttemptsToJumpOverAPieceIllegal" />
+    </UnitTest>
+    <UnitTest name="RedMovesTheHorseInAnLShapeWithNoBlockLegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="09a80872-f0e0-b917-f375-27fb8ca588f9">
+      <Execution id="f2cee1ac-447d-4580-a733-a6e4763037f3" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="RedMovesTheHorseInAnLShapeWithNoBlockLegal" />
+    </UnitTest>
+    <UnitTest name="RedMovesTheGeneralWithinThePalaceLegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="f0b369aa-fd16-9cb3-5d3e-c45eb99923c9">
+      <Execution id="d97d1f3d-48dd-4044-9313-90e6b2b980b1" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="RedMovesTheGeneralWithinThePalaceLegal" />
+    </UnitTest>
+    <UnitTest name="RedMovesTheSoldierForwardBeforeCrossingTheRiverLegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="687d12f0-b253-ad0c-d04b-3e08c391c61a">
+      <Execution id="b93ce67d-3d8b-4291-8712-75534e575b9f" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="RedMovesTheSoldierForwardBeforeCrossingTheRiverLegal" />
+    </UnitTest>
+    <UnitTest name="RedMovesTheGuardStraightIllegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="c0963126-35f8-a365-c466-cfc5f50d0c76">
+      <Execution id="c6a8793c-6af2-404b-a4f3-7d33eb271511" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="RedMovesTheGuardStraightIllegal" />
+    </UnitTest>
+    <UnitTest name="RedMovesTheCannonAndJumpsExactlyOneScreenToCaptureLegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="fba60cca-3a1e-53cf-7fef-0b2737eccadf">
+      <Execution id="b75b4784-2d30-4be5-b5c9-c3de6c1b957d" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="RedMovesTheCannonAndJumpsExactlyOneScreenToCaptureLegal" />
+    </UnitTest>
+    <UnitTest name="RedMovesTheElephant2_StepDiagonalWithAClearMidpointLegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="0c96c06f-20ef-ff84-36d2-a0cb084745ea">
+      <Execution id="4bdca1f3-0601-4a5c-a8e8-d2567b94a9e3" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="RedMovesTheElephant2_StepDiagonalWithAClearMidpointLegal" />
+    </UnitTest>
+    <UnitTest name="RedMovesTheSoldierAndAttemptsToMoveBackwardAfterCrossingIllegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="eefa19ad-809d-9f92-a76b-8a3b7e92d9b4">
+      <Execution id="6c1a8a13-dcfb-4e52-af3f-29fe671f52a4" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="RedMovesTheSoldierAndAttemptsToMoveBackwardAfterCrossingIllegal" />
+    </UnitTest>
+    <UnitTest name="RedMovesTheGeneralOutsideThePalaceIllegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="2d746cd7-d79a-4d3d-e396-cf5df9ff2dd9">
+      <Execution id="586380e6-6b9d-49f4-9d22-38294cb66059" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="RedMovesTheGeneralOutsideThePalaceIllegal" />
+    </UnitTest>
+    <UnitTest name="RedMovesTheCannonAndTriesToJumpWithMoreThanOneScreenIllegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="ac9626ea-cef3-a95c-69bd-35c8338fb86a">
+      <Execution id="e162ad8e-2665-4d3a-971f-2ef2c3551318" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="RedMovesTheCannonAndTriesToJumpWithMoreThanOneScreenIllegal" />
+    </UnitTest>
+    <UnitTest name="RedMovesTheGuardDiagonallyInThePalaceLegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="131cf4cd-c6df-294f-1ae9-d0eb7e90ea58">
+      <Execution id="f0096cc7-9a12-47a5-96bd-81f6a09ba2ba" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="RedMovesTheGuardDiagonallyInThePalaceLegal" />
+    </UnitTest>
+    <UnitTest name="RedMovesTheElephantAndItsMidpointIsBlockedIllegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="0474e0bf-16a3-b841-11b4-d71d88908172">
+      <Execution id="5adb1e88-00d5-49fd-b9d5-ba2329932e8e" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="RedMovesTheElephantAndItsMidpointIsBlockedIllegal" />
+    </UnitTest>
+    <UnitTest name="RedMovesTheSoldierSidewaysAfterCrossingTheRiverLegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="d94eef9f-77cc-775d-1e02-fe06c0fc5ef8">
+      <Execution id="39bd08aa-7ad1-4950-ae9a-4c02681df49e" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="RedMovesTheSoldierSidewaysAfterCrossingTheRiverLegal" />
+    </UnitTest>
+    <UnitTest name="GeneralsFaceEachOtherOnTheSameFileIllegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="bfd364e0-c5fe-2ffa-b020-368b73a5dac9">
+      <Execution id="fc52fdbd-6e64-4d09-8e2b-fea5b9a7ce1d" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="GeneralsFaceEachOtherOnTheSameFileIllegal" />
+    </UnitTest>
+    <UnitTest name="RedMovesTheRookAlongAClearRankLegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="b6a9b573-eb6d-448d-a8d0-21df837e462f">
+      <Execution id="82125642-8c22-4d1c-ab2c-5dff2241cd0d" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="RedMovesTheRookAlongAClearRankLegal" />
+    </UnitTest>
+    <UnitTest name="RedMovesTheCannonAndTriesToJumpWithZeroScreensIllegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="dd9e1381-ad5a-4d6a-b60f-009586387a3a">
+      <Execution id="5a20fbfc-87ae-4b59-a246-0a63e9324a0b" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="RedMovesTheCannonAndTriesToJumpWithZeroScreensIllegal" />
+    </UnitTest>
+    <UnitTest name="RedMovesTheSoldierAndTriesToMoveSidewaysBeforeCrossingIllegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="4ad8fe01-94d2-6deb-1dfd-02514272df48">
+      <Execution id="e152d29a-c8e6-4644-a354-3dcc00700c94" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="RedMovesTheSoldierAndTriesToMoveSidewaysBeforeCrossingIllegal" />
+    </UnitTest>
+    <UnitTest name="RedMovesTheHorseAndItIsBlockedByAnAdjacentPieceIllegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="a2fab6db-855e-4bf0-06f4-4af3c1b04a01">
+      <Execution id="e2fab5dd-d37c-4474-b583-b005a54cbf22" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="RedMovesTheHorseAndItIsBlockedByAnAdjacentPieceIllegal" />
+    </UnitTest>
+    <UnitTest name="RedCapturesANon_GeneralPieceAndTheGameContinuesLegal" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="c28fc0ea-a785-ef81-89cf-5b736fdd2546">
+      <Execution id="a6bb8ad2-93f7-479b-b5a4-a205edce94a0" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Features.ChineseChess象棋RulesFeature" name="RedCapturesANon_GeneralPieceAndTheGameContinuesLegal" />
+    </UnitTest>
+    <UnitTest name="Test1" storage="/users/apple/cursor test/chinese chess/chinesechess.tests/bin/debug/net8.0/chinesechess.tests.dll" id="fcb426e9-c7d2-712e-ffef-5e65c178effe">
+      <Execution id="1be202ad-d7cf-49a4-8e72-763381d963dc" />
+      <TestMethod codeBase="/Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="ChineseChess.Tests.Tests" name="Test1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="2d746cd7-d79a-4d3d-e396-cf5df9ff2dd9" executionId="586380e6-6b9d-49f4-9d22-38294cb66059" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d94eef9f-77cc-775d-1e02-fe06c0fc5ef8" executionId="39bd08aa-7ad1-4950-ae9a-4c02681df49e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c28fc0ea-a785-ef81-89cf-5b736fdd2546" executionId="a6bb8ad2-93f7-479b-b5a4-a205edce94a0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fba60cca-3a1e-53cf-7fef-0b2737eccadf" executionId="b75b4784-2d30-4be5-b5c9-c3de6c1b957d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c0963126-35f8-a365-c466-cfc5f50d0c76" executionId="c6a8793c-6af2-404b-a4f3-7d33eb271511" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc6fd1b0-7469-e3c7-9409-7918339ca20a" executionId="2bdf5993-7a15-4ae1-a7e4-54216d3c74d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dd9e1381-ad5a-4d6a-b60f-009586387a3a" executionId="5a20fbfc-87ae-4b59-a246-0a63e9324a0b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c3623792-76c2-2351-9578-ddb62b370b7b" executionId="0050b933-2f19-4ead-8b4a-81b66e7d19f4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a2fab6db-855e-4bf0-06f4-4af3c1b04a01" executionId="e2fab5dd-d37c-4474-b583-b005a54cbf22" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4ad8fe01-94d2-6deb-1dfd-02514272df48" executionId="e152d29a-c8e6-4644-a354-3dcc00700c94" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eefa19ad-809d-9f92-a76b-8a3b7e92d9b4" executionId="6c1a8a13-dcfb-4e52-af3f-29fe671f52a4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="131cf4cd-c6df-294f-1ae9-d0eb7e90ea58" executionId="f0096cc7-9a12-47a5-96bd-81f6a09ba2ba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b6a9b573-eb6d-448d-a8d0-21df837e462f" executionId="82125642-8c22-4d1c-ab2c-5dff2241cd0d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0c96c06f-20ef-ff84-36d2-a0cb084745ea" executionId="4bdca1f3-0601-4a5c-a8e8-d2567b94a9e3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cf36bdc8-8c16-5de9-8864-1bcd8ba8f252" executionId="3ad037ea-9745-4800-b35d-5a77499afd0a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bfd364e0-c5fe-2ffa-b020-368b73a5dac9" executionId="fc52fdbd-6e64-4d09-8e2b-fea5b9a7ce1d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="687d12f0-b253-ad0c-d04b-3e08c391c61a" executionId="b93ce67d-3d8b-4291-8712-75534e575b9f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ac9626ea-cef3-a95c-69bd-35c8338fb86a" executionId="e162ad8e-2665-4d3a-971f-2ef2c3551318" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="27ac7941-aef2-01ee-6dbf-6fb3871d90a4" executionId="d4747075-90c7-49e4-8fcf-f3e00c393c16" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="09a80872-f0e0-b917-f375-27fb8ca588f9" executionId="f2cee1ac-447d-4580-a733-a6e4763037f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f0b369aa-fd16-9cb3-5d3e-c45eb99923c9" executionId="d97d1f3d-48dd-4044-9313-90e6b2b980b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0474e0bf-16a3-b841-11b4-d71d88908172" executionId="5adb1e88-00d5-49fd-b9d5-ba2329932e8e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fcb426e9-c7d2-712e-ffef-5e65c178effe" executionId="1be202ad-d7cf-49a4-8e72-763381d963dc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="23" executed="23" passed="23" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.2.0.0: Test execution started
+Running all tests in /Users/apple/cursor test/Chinese Chess/ChineseChess.Tests/bin/Debug/net8.0/ChineseChess.Tests.dll
+   NUnit3TestExecutor discovered 23 of 23 NUnit test cases using Current Discovery mode, Non-Explicit run
+NUnit Adapter 4.2.0.0: Test execution complete
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.3518920+08:00">
+        <Text>Given the board has:
+  --- table step argument ---
+  | Piece         | Position |
+  | Red General   | (2, 4)   |
+  | Black General | (8, 5)   |
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardHas(&lt;table&gt;) (0.0s)
+When Red moves the General from (2, 4) to (2, 5)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "General", 2, 4, 2, 5) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)
+</Text>
+      </RunInfo>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.3536750+08:00">
+        <Text>Given the board has:
+  --- table step argument ---
+  | Piece        | Position |
+  | Red Rook     | (5, 5)   |
+  | Black Cannon | (5, 8)   |
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardHas(&lt;table&gt;) (0.0s)
+When Red moves the Rook from (5, 5) to (5, 8)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Rook", 5, 5, 5, 8) (0.0s)
+Then the game is not over just from that capture
+-&gt; done: ChineseChessStepDefinitions.ThenTheGameIsNotOver() (0.0s)
+</Text>
+      </RunInfo>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.3583600+08:00">
+        <Text>Given the board has:
+  --- table step argument ---
+  | Piece         | Position |
+  | Red Rook      | (5, 5)   |
+  | Black General | (5, 8)   |
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardHas(&lt;table&gt;) (0.0s)
+When Red moves the Rook from (5, 5) to (5, 8)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Rook", 5, 5, 5, 8) (0.0s)
+Then Red wins immediately
+-&gt; done: ChineseChessStepDefinitions.ThenPlayerWinsImmediately("Red") (0.0s)
+</Text>
+      </RunInfo>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.3587070+08:00">
+        <Text>Given the board has:
+  --- table step argument ---
+  | Piece         | Position |
+  | Red Cannon    | (6, 2)   |
+  | Black Soldier | (6, 5)   |
+  | Black Guard   | (6, 8)   |
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardHas(&lt;table&gt;) (0.0s)
+When Red moves the Cannon from (6, 2) to (6, 8)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Cannon", 6, 2, 6, 8) (0.0s)
+Then the move is legal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("legal") (0.0s)
+</Text>
+      </RunInfo>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.3589160+08:00">
+        <Text>Given the board has:
+  --- table step argument ---
+  | Piece         | Position |
+  | Red Cannon    | (6, 2)   |
+  | Red Soldier   | (6, 4)   |
+  | Black Soldier | (6, 5)   |
+  | Black Guard   | (6, 8)   |
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardHas(&lt;table&gt;) (0.0s)
+When Red moves the Cannon from (6, 2) to (6, 8)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Cannon", 6, 2, 6, 8) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)
+</Text>
+      </RunInfo>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.3590640+08:00">
+        <Text>Given the board has:
+  --- table step argument ---
+  | Piece       | Position |
+  | Red Cannon  | (6, 2)   |
+  | Black Guard | (6, 8)   |
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardHas(&lt;table&gt;) (0.0s)
+When Red moves the Cannon from (6, 2) to (6, 8)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Cannon", 6, 2, 6, 8) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)
+</Text>
+      </RunInfo>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.3591300+08:00">
+        <Text>Given the board is empty except for a Red Cannon at (6, 2)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Cannon", 6, 2) (0.0s)
+When Red moves the Cannon from (6, 2) to (6, 8)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Cannon", 6, 2, 6, 8) (0.0s)
+Then the move is legal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("legal") (0.0s)
+</Text>
+      </RunInfo>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.3592260+08:00">
+        <Text>Given the board is empty except for a Red Elephant at (3, 3)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Elephant", 3, 3) (0.0s)
+When Red moves the Elephant from (3, 3) to (5, 5)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Elephant", 3, 3, 5, 5) (0.0s)
+Then the move is legal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("legal") (0.0s)
+</Text>
+      </RunInfo>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.3593220+08:00">
+        <Text>Given the board has:
+  --- table step argument ---
+  | Piece        | Position |
+  | Red Elephant | (3, 3)   |
+  | Black Rook   | (4, 4)   |
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardHas(&lt;table&gt;) (0.0s)
+When Red moves the Elephant from (3, 3) to (5, 5)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Elephant", 3, 3, 5, 5) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)
+</Text>
+      </RunInfo>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.4241500+08:00">
+        <Text>Given the board is empty except for a Red Elephant at (5, 3)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Elephant", 5, 3) (0.0s)
+When Red moves the Elephant from (5, 3) to (7, 5)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Elephant", 5, 3, 7, 5) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)
+</Text>
+      </RunInfo>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.4242100+08:00">
+        <Text>Given the board is empty except for a Red General at (1, 6)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "General", 1, 6) (0.0s)
+When Red moves the General from (1, 6) to (1, 7)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "General", 1, 6, 1, 7) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)
+</Text>
+      </RunInfo>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.4242190+08:00">
+        <Text>Given the board is empty except for a Red General at (1, 5)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "General", 1, 5) (0.0s)
+When Red moves the General from (1, 5) to (1, 4)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "General", 1, 5, 1, 4) (0.0s)
+Then the move is legal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("legal") (0.0s)
+</Text>
+      </RunInfo>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.4243610+08:00">
+        <Text>Given the board is empty except for a Red Guard at (1, 4)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Guard", 1, 4) (0.0s)
+When Red moves the Guard from (1, 4) to (2, 5)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Guard", 1, 4, 2, 5) (0.0s)
+Then the move is legal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("legal") (0.0s)
+</Text>
+      </RunInfo>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.4243830+08:00">
+        <Text>Given the board is empty except for a Red Guard at (2, 5)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Guard", 2, 5) (0.0s)
+When Red moves the Guard from (2, 5) to (2, 6)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Guard", 2, 5, 2, 6) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)
+</Text>
+      </RunInfo>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.4244660+08:00">
+        <Text>Given the board has:
+  --- table step argument ---
+  | Piece      | Position |
+  | Red Horse  | (3, 3)   |
+  | Black Rook | (4, 3)   |
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardHas(&lt;table&gt;) (0.0s)
+When Red moves the Horse from (3, 3) to (5, 4)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Horse", 3, 3, 5, 4) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)
+</Text>
+      </RunInfo>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.4244850+08:00">
+        <Text>Given the board is empty except for a Red Horse at (3, 3)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Horse", 3, 3) (0.0s)
+When Red moves the Horse from (3, 3) to (5, 4)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Horse", 3, 3, 5, 4) (0.0s)
+Then the move is legal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("legal") (0.0s)
+</Text>
+      </RunInfo>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.4244950+08:00">
+        <Text>Given the board is empty except for a Red Rook at (4, 1)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Rook", 4, 1) (0.0s)
+When Red moves the Rook from (4, 1) to (4, 9)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Rook", 4, 1, 4, 9) (0.0s)
+Then the move is legal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("legal") (0.0s)
+</Text>
+      </RunInfo>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.4245100+08:00">
+        <Text>Given the board has:
+  --- table step argument ---
+  | Piece         | Position |
+  | Red Rook      | (4, 1)   |
+  | Black Soldier | (4, 5)   |
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardHas(&lt;table&gt;) (0.0s)
+When Red moves the Rook from (4, 1) to (4, 9)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Rook", 4, 1, 4, 9) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)
+</Text>
+      </RunInfo>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.4255160+08:00">
+        <Text>Given the board is empty except for a Red Soldier at (6, 5)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Soldier", 6, 5) (0.0s)
+When Red moves the Soldier from (6, 5) to (5, 5)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Soldier", 6, 5, 5, 5) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)
+</Text>
+      </RunInfo>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.4255380+08:00">
+        <Text>Given the board is empty except for a Red Soldier at (3, 5)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Soldier", 3, 5) (0.0s)
+When Red moves the Soldier from (3, 5) to (3, 4)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Soldier", 3, 5, 3, 4) (0.0s)
+Then the move is illegal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("illegal") (0.0s)
+</Text>
+      </RunInfo>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.4255490+08:00">
+        <Text>Given the board is empty except for a Red Soldier at (3, 5)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Soldier", 3, 5) (0.0s)
+When Red moves the Soldier from (3, 5) to (4, 5)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Soldier", 3, 5, 4, 5) (0.0s)
+Then the move is legal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("legal") (0.0s)
+</Text>
+      </RunInfo>
+      <RunInfo computerName="AppledeMacBook-Pro" outcome="Warning" timestamp="2025-07-09T22:31:25.4255580+08:00">
+        <Text>Given the board is empty except for a Red Soldier at (6, 5)
+-&gt; done: ChineseChessStepDefinitions.GivenTheBoardIsEmptyExceptForA("Red", "Soldier", 6, 5) (0.0s)
+When Red moves the Soldier from (6, 5) to (6, 4)
+-&gt; done: ChineseChessStepDefinitions.WhenPlayerMovesPiece("Red", "Soldier", 6, 5, 6, 4) (0.0s)
+Then the move is legal
+-&gt; done: ChineseChessStepDefinitions.ThenTheMoveIs("legal") (0.0s)
+</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

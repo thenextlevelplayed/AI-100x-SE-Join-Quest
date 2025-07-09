@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "pickles.commandline": {
+      "version": "4.0.3",
+      "commands": [
+        "pickles"
+      ]
+    }
+  }
+}
